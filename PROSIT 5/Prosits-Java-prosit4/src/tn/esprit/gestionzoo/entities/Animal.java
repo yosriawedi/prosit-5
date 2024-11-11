@@ -1,6 +1,6 @@
 package tn.esprit.gestionzoo.entities;
 
-public class Animal {
+public abstract class Animal {
 
     private String family, name;
     private int age;
@@ -63,4 +63,7 @@ public class Animal {
                 ", isMammal=" + isMammal +
                 '}';
     }
+
+    // Redéfinition de la méthode eatPlantAndMeat de l'interface Omnivore
+    public abstract void eatPlantAndMeet(Food food);
 }
